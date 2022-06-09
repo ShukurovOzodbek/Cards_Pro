@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+          <a href="./main.html">Главная</a>
+          <a href="./coshel.html">Мои кошельки</a>
+          <a href="./tranz.html">Мои транзакции</a>
+        </div>
+        <div class="right">
+            <span>{{ email }}</span>
+            <a href="./index.html" class="log">-></a>
+        </div>
+    </header>
+    <div id="main" class="main">
+        <div class="top">
+            <div class="your">
+                <h1>Добро пожаловать, <span class="name_polz"> {{ name surname }} </span>!</h1>
+                <span class="web">{{ website }}</span>
+            </div>
+        </div>
+        <div class="cards_div">
+            <div class="cards">
+                <h2 class="coshel">Мои кошельки</h2>
+                <span class="none">Чтобы добавить карту нажминет на мои кошельки :) </span>
+                <div class="crd">
+                </div>
+                <a href="./coshel.html" class="all">Смотреть все кошельки</a>
+            </div>
+        </div>
+    </div>
+    <div class="tranzactions">
+        <table class="blue">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Отравлена с кошелька</th>
+                <th>Категория</th>
+                <th>Сумма транзакции</th>
+                <th>Когда</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+          <a class="all_tr" href="./tranz.html">Показать Все</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+<!-- <tr>
+    <td>12312321312321313</td>
+    <td>VISA</td>
+    <td>Автомобиль</td>
+    <td>414,000,000</td>
+    <td>4 дня назад</td>
+  </tr> -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tranz.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/coshel.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="./main.html">Главная</a>
+            <a href="./coshel.html">Мои кошельки</a>
+            <a href="./tranz.html">Мои транзакции</a>
+        </div>
+        <div class="right">
+            <span>{{ email }}</span>
+            <a href="./index.html" class="log">-></a>
+        </div>
+    </header>
+    <div class="tranzactions">
+        <h1>Мои транзакции</h1>
+        <span class="web"></span>
+        <table class="blue">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Отравлена с кошелька</th>
+                <th>Категория</th>
+                <th>Сумма транзакции</th>
+                <th>Когда</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+          </table>
+          <button class="add">Добавить</button>
+    </div>
+
+    <div class="madal">
+        <div class="back"></div>
+        <div class="modal_block">
+            <form action="#" name="adding_tranz">
+                <input type="text" placeholder="Из кошелька" name="send_name">
+                <input type="number" placeholder="Сумма" name="num">
+                <input type="text" placeholder="Категория" name="cotegory">
+                <button>Добавить</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/tranz.js"></script>
+</body>
+</html>

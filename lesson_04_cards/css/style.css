@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+form{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px
+}
+button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button a{
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: rgb(0, 85, 255);
+}
+input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid rgb(209, 209, 209);
+}
+a{
+    all: unset;
+    color: rgb(0, 85, 255);
+    cursor: pointer;
+}
+.a{
+    position: relative;
+    z-index: 100;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: none;
+}
+.btn, .btn2{
+    background-color: white;
+    color: rgb(0, 85, 255);
+}
+.in{
+    all: unset;
+    color: rgb(0, 85, 255);
+    cursor: pointer;
+}
+button{
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 85, 255);
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.invalid{
+    border: 2px solid red;
+}
+.valid{
+    border: 2px solid rgb(0, 212, 0);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    padding: 30px;
+    margin-top: 100px;
+}
+.cards_div{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 15px;
+    margin-top: 50px;
+}
+.cards {
+    width: 95%;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+}
+.crd{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 70px;
+    overflow: hidden;
+}
+.top_card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
