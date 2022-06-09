@@ -70,8 +70,21 @@ function submit() {
 }
 
 if(us) {
-    voiti()
-
+    document.body.innerHTML = ''
+    document.body.innerHTML += `
+    <h1>Войти</h1>
+    <form action="#" name="regist">
+        <input required placeholder="Почта" type="email" name="email">
+        <input required placeholder="Пароль" type="password" name="password">
+        <button>
+            Войти
+            <a href="./main.html">
+                Нажмите еще раз
+            </a>
+        </button>
+    </form>
+    <button class="btn">Регестрция</button>
+    `
     let form = document.forms.regist
     form.onsubmit = (e) => {
         e.preventDefault()
@@ -95,64 +108,53 @@ if(us) {
 }else{
 }
 
-regist()
+let btn = document.querySelector('.btn')
+let btn2 = document.querySelector('#btn2')
 
+if(btn) {
+    btn.onclick = () => {
+        voiti()
+    }
+}
+if(btn2) {
+    btn2.onclick = () => {
+        regist()
+        console.log('asdasd');
+    }
+}
 function voiti() {
     document.body.innerHTML = ''
     document.body.innerHTML += `
-    <h1>Войти</h1>
+    <h1>Регестрация</h1>
     <form action="#" name="regist">
         <input required placeholder="Почта" type="email" name="email">
+        <input required placeholder="Имя" type="text" name="name">
+        <input required placeholder="Фамилия" type="text" name="surname">
         <input required placeholder="Пароль" type="password" name="password">
         <button>
-            Войти
+            Продолжить
             <a href="./main.html">
                 Нажмите еще раз
             </a>
         </button>
     </form>
-    <button class="btn">Регестрция</button>
+    <button id="btn2">Войти в аккаунт</button>
     `
-
-    let button = document.querySelector('.btn')
-    button.onclick = () => {
-        localStorage.clear()
-        document.body.innerHTML = ''
-        document.body.innerHTML += `
-        <h1>Регестрация</h1>
+}
+function regist() {
+    document.body.innerHTML = ''
+    document.body.innerHTML += `
+        <h1>Войти</h1>
         <form action="#" name="regist">
             <input required placeholder="Почта" type="email" name="email">
-            <input required placeholder="Имя" type="text" name="name">
-            <input required placeholder="Фамилия" type="text" name="surname">
             <input required placeholder="Пароль" type="password" name="password">
             <button>
-                Продолжить
+                Войти
                 <a href="./main.html">
                     Нажмите еще раз
                 </a>
             </button>
         </form>
-        <button class="btn2">Войти в аккаунт</button>
+        <button class="btn">Регестрция</button>
         `
-    }
-}
-function regist() {
-    let btn2 = document.querySelector('.btn2')
-    btn2.onclick = () => {
-        document.body.innerHTML = ''
-        document.body.innerHTML += `
-            <h1>Войти</h1>
-            <form action="#" name="regist">
-                <input required placeholder="Почта" type="email" name="email">
-                <input required placeholder="Пароль" type="password" name="password">
-                <button>
-                    Войти
-                    <a href="./main.html">
-                        Нажмите еще раз
-                    </a>
-                </button>
-            </form>
-            <button class="btn">Регестрция</button>
-            `
-    }
 }

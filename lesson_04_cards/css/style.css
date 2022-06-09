@@ -55,7 +55,7 @@ a{
     color: white;
     display: none;
 }
-.btn, .btn2{
+.btn, #btn2{
     background-color: white;
     color: rgb(0, 85, 255);
 }
